@@ -148,7 +148,7 @@ export function Navigation({ currentPage, onNavigate }: NavigationProps) {
             >
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
-                <span>+255 123 456 789</span>
+                <span>+255 782 206 905</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />

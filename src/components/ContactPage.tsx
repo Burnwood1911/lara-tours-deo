@@ -1,13 +1,6 @@
 import { useState } from "react";
 import { motion } from "motion/react";
-import {
-  MapPin,
-  Phone,
-  Mail,
-  Clock,
-  Send,
-  MessageCircle,
-} from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Send, MessageCircle } from "lucide-react";
 import { Button } from "./ui/button";
 import { Card, CardContent } from "./ui/card";
 import { Input } from "./ui/input";
@@ -18,7 +11,7 @@ import {
   SelectContent,
   SelectItem,
   SelectTrigger,
-  SelectValue,
+  SelectValue
 } from "./ui/select";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { toast } from "sonner@2.0.3";
@@ -32,7 +25,7 @@ export function ContactPage() {
     destination: "",
     travelDate: "",
     guests: "",
-    message: "",
+    message: ""
   });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -46,7 +39,7 @@ export function ContactPage() {
       destination: "",
       travelDate: "",
       guests: "",
-      message: "",
+      message: ""
     });
   };
 
@@ -131,9 +124,9 @@ export function ContactPage() {
                       <div>
                         <h3 className="mb-2">Call Us</h3>
                         <p className="text-sm text-muted-foreground">
-                          Main: +255 123 456 789
+                          Main: +255 782 206 905
                           <br />
-                          WhatsApp: +255 123 456 789
+                          WhatsApp: +255 782 206 905
                           <br />
                           24/7 Emergency: +255 987 654 321
                         </p>
@@ -210,12 +203,15 @@ export function ContactPage() {
                 <Card className="p-6 bg-gradient-to-br from-[--terracotta] to-[--sunset-orange] text-white">
                   <CardContent className="pt-6 text-center">
                     <MessageCircle className="w-12 h-12 mx-auto mb-4" />
-                    <h3 className="mb-2 text-white">Quick Response on WhatsApp</h3>
+                    <h3 className="mb-2 text-white">
+                      Quick Response on WhatsApp
+                    </h3>
                     <p className="text-sm text-white/90 mb-4">
                       Chat with us instantly for immediate assistance
                     </p>
                     <Button
-                      onClick={() => window.open("https://wa.me/255123456789", "_blank")}
+                      onClick={() =>
+                        window.open("https://wa.me/255123456789", "_blank")}
                       className="bg-white text-[--terracotta] hover:bg-white/90"
                     >
                       Start WhatsApp Chat
@@ -283,9 +279,8 @@ export function ContactPage() {
                         <label className="block mb-2">Inquiry Type *</label>
                         <Select
                           value={formData.category}
-                          onValueChange={(value) =>
-                            setFormData({ ...formData, category: value })
-                          }
+                          onValueChange={value =>
+                            setFormData({ ...formData, category: value })}
                           required
                         >
                           <SelectTrigger>
@@ -315,9 +310,8 @@ export function ContactPage() {
                         <label className="block mb-2">Destination</label>
                         <Select
                           value={formData.destination}
-                          onValueChange={(value) =>
-                            setFormData({ ...formData, destination: value })
-                          }
+                          onValueChange={value =>
+                            setFormData({ ...formData, destination: value })}
                         >
                           <SelectTrigger>
                             <SelectValue placeholder="Select destination" />
@@ -328,7 +322,9 @@ export function ContactPage() {
                               Kilimanjaro
                             </SelectItem>
                             <SelectItem value="zanzibar">Zanzibar</SelectItem>
-                            <SelectItem value="ngorongoro">Ngorongoro</SelectItem>
+                            <SelectItem value="ngorongoro">
+                              Ngorongoro
+                            </SelectItem>
                             <SelectItem value="multiple">
                               Multiple Destinations
                             </SelectItem>
@@ -381,8 +377,8 @@ export function ContactPage() {
                     </Button>
 
                     <p className="text-sm text-muted-foreground text-center">
-                      By submitting this form, you agree to our privacy policy and
-                      terms of service.
+                      By submitting this form, you agree to our privacy policy
+                      and terms of service.
                     </p>
                   </form>
                 </CardContent>

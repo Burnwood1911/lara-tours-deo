@@ -1,4 +1,12 @@
-import { MapPin, Phone, Mail, Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
+import {
+  MapPin,
+  Phone,
+  Mail,
+  Facebook,
+  Instagram,
+  Twitter,
+  Linkedin
+} from "lucide-react";
 
 interface FooterProps {
   onNavigate: (page: string) => void;
@@ -21,8 +29,8 @@ export function Footer({ onNavigate }: FooterProps) {
               </div>
             </div>
             <p className="text-white/80 text-sm mb-4">
-              Your trusted partner for unforgettable African adventures. Licensed
-              tour operator serving clients worldwide since 2010.
+              Your trusted partner for unforgettable African adventures.
+              Licensed tour operator serving clients worldwide since 2010.
             </p>
             <div className="flex gap-3">
               <a
@@ -70,8 +78,8 @@ export function Footer({ onNavigate }: FooterProps) {
                 { label: "Tours & Packages", value: "tours" },
                 { label: "Destinations", value: "destinations" },
                 { label: "Blog", value: "blog" },
-                { label: "Contact", value: "contact" },
-              ].map((link) => (
+                { label: "Contact", value: "contact" }
+              ].map(link =>
                 <li key={link.value}>
                   <button
                     onClick={() => onNavigate(link.value)}
@@ -80,7 +88,7 @@ export function Footer({ onNavigate }: FooterProps) {
                     {link.label}
                   </button>
                 </li>
-              ))}
+              )}
             </ul>
           </div>
 
@@ -145,7 +153,7 @@ export function Footer({ onNavigate }: FooterProps) {
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4 flex-shrink-0" />
-                <span className="text-white/80">+255 123 456 789</span>
+                <span className="text-white/80">+255 782 206 905</span>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4 flex-shrink-0" />
