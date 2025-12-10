@@ -151,7 +151,7 @@ export function ContactPage() {
                       <div>
                         <h3 className="mb-2">Email Us</h3>
                         <p className="text-sm text-muted-foreground">
-                          General: info@laratours.com
+                          General: info@laratoursandtravels.com
                           <br />
                           Bookings: bookings@laratours.com
                           <br />

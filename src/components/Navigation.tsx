@@ -152,7 +152,7 @@ export function Navigation({ currentPage, onNavigate }: NavigationProps) {
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                <span>info@laratours.com</span>
+                <span>info@laratoursandtravels.com</span>
               </div>
             </motion.div>
           )}

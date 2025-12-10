@@ -157,7 +157,9 @@ export function Footer({ onNavigate }: FooterProps) {
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4 flex-shrink-0" />
-                <span className="text-white/80">info@laratours.com</span>
+                <span className="text-white/80">
+                  info@laratoursandtravels.com
+                </span>
               </li>
             </ul>
           </div>
